@@ -1,4 +1,5 @@
 import praw
+import numpy as np
 
 reddit = praw.Reddit(client_id = "",
                     client_secret = "",
@@ -43,3 +44,41 @@ def redditor_attributes(reddit_usernames):
             continue
 
     return redditor_data
+
+
+# Additional function to gather info for EDA on what subreddits users are visiting as well as comments
+def redditor_subreddit(redditor_list):
+    subreddit_freq_dictionary = {}
+    redditor_subreddit_list = []
+    subreddit_list = []
+    redditor_comments = []
+    count = 0
+    for name in redditor_list:
+        redditor = reddit.redditor(name=name)
+        try:
+            for comment in redditor.comments.new(limit=50):
+                subreddit_list.append(str(comment.subreddit))
+                sub_unique = list(np.unique(subreddit_list))
+                redditor_comments.append(comment.body)
+
+            for i in sub_unique:
+                if i not in subreddit_freq_dictionary:
+                    subreddit_freq_dictionary[i] = 1
+                else:
+                    subreddit_freq_dictionary[i] += 1
+
+            sub_unique.insert(0, name)
+
+        except:
+            continue
+
+        subreddit_list = []
+        redditor_subreddit_list.append(sub_unique)
+
+    if count % 50 == 0:
+        print(count)
+
+    count += 1
+
+    return redditor_subreddit_list, subreddit_freq_dictionary, redditor_comments
+
