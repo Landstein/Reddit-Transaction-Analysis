@@ -38,6 +38,7 @@ relationship_text = {}
 user_grade = {}
 # This function takes in the confirmed trade thread urls and calls the reddit API to get all of the comments from those
 # threads.  From those Threads this Function grabs user grade, who transacted with who and what was transacted
+# Scraping all confirmed trade threads will take roughly 18-20 hours with praw limitations
 def grab_transactions_final(url):
     submission = reddit.submission(url=url)
     submission.comments.replace_more(limit=None)
