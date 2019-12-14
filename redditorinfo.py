@@ -1,5 +1,7 @@
 import praw
 import numpy as np
+import time
+from datetime import datetime
 
 reddit = praw.Reddit(client_id = "",
                     client_secret = "",
