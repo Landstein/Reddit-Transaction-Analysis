@@ -1,12 +1,5 @@
 import praw
-import re
-import json
-import numpy as np
-import pandas as pd
-from copy import deepcopy
-import pickle
-import time
-from datetime import datetime
+
 
 reddit = praw.Reddit(client_id = "",
                     client_secret = "",
