@@ -23,8 +23,8 @@ def redditor_attributes(reddit_usernames):
         try:
             redditor = reddit.redditor(name=name)
             varified_email = redditor.has_verified_email
-            gold = redditor.is_mod
-            mod = redditor.is_gold
+            gold = redditor.is_gold
+            mod = redditor.is_mod
             karma = int(redditor.link_karma) + int(redditor.comment_karma)
             # Calculating Date Time Difference
             a = time.strftime('%m/%d/%Y', time.gmtime(redditor.created_utc))
