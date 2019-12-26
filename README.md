@@ -9,3 +9,12 @@ To deterimine if another redditor is risky to transact with
 ## Data 
 1. Used Reddit's API to pull data (PRAW)
 
+
+## To Do 
+
+1. Redditor Information Function 
+2. Scammer information function 
+3. Api confirmed threads pull 
+4. Approximate price 
+5. SQL Server to store information 
+6. Location of products 
