@@ -18,3 +18,15 @@ To deterimine if another redditor is risky to transact with
 4. Approximate price 
 5. SQL Server to store information 
 6. Location of products 
+
+
+## Submission Title EDA
+
+[!](https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/common_title_numbers.png)
+
+[!](https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/common_title_words.png)
+
+
+## Product_selling_price() function output example 
+
+[!](https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/product_prices.png)
