@@ -10,11 +10,11 @@ from sqlalchemy import create_engine
 
 def reddit_object():
 
-    reddit = praw.Reddit(client_id="WKfANfqtJZEuhg",
-                         client_secret="ruYIIrAlQYS816YCZQVQ8t7MExQ",
-                         user_agent="WKfANfqtJZEuhg",
-                         username="Python_integrated",
-                         password="Python123")
+    reddit = praw.Reddit(client_id="",
+                         client_secret="",
+                         user_agent="",
+                         username="",
+                         password="")
 
     return reddit
 
