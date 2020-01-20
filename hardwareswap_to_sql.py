@@ -51,7 +51,7 @@ def new_submissions(df):
     cur.execute("""SELECT * FROM Submissions.submissions;""")
     df_sql = pd.DataFrame(cur.fetchall())
     df_sql.columns = [x[0] for x in cur.description]
-    df_sql.to_csv('/Users/eric/FlatIron/section01/Projects/reddit_scraper/db_backup/submission_sql_backup.csv')
+    df_sql.to_csv('/home/ubuntu/Reddit-Transaction-Analysis/submission_sql_backup.csv')
     new_submission = df[~df['id'].isin(df_sql['id'])]
     new_sub_list = new_submission.values.tolist()
     cur.close()
