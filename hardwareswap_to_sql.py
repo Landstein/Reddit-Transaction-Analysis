@@ -1,6 +1,5 @@
 import praw
 import pandas as pd
-import schedule
 import time
 import config
 
