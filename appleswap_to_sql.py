@@ -5,7 +5,7 @@ import time
 #SQL
 import mysql.connector
 from sqlalchemy import create_engine
-import config
+
 
 def reddit_object():
 
