@@ -1,6 +1,5 @@
 import praw
 import pandas as pd
-import schedule
 import time
 
 #SQL
@@ -10,11 +9,11 @@ import config
 
 def reddit_object():
 
-    reddit = praw.Reddit(client_id = "WKfANfqtJZEuhg",
-                        client_secret = "ruYIIrAlQYS816YCZQVQ8t7MExQ",
-                        user_agent="WKfANfqtJZEuhg",
-                        username = "Python_integrated",
-                        password = "Python123")
+    reddit = praw.Reddit(client_id = "",
+                        client_secret = "",
+                        user_agent="",
+                        username = "",
+                        password = "")
 
     return reddit
 
@@ -66,18 +65,12 @@ def sql_submit(new_submission):
     new_submission.to_sql('appleswap', con = engine, if_exists = 'append')
 
 
-def main():
-    reddit = reddit_object()
-    df = scrape_submissions_1000(reddit)
-    new_sub_list, new_submission, df_sql = new_submissions(df)
-    print(new_submission.shape)
-    sql_submit(new_submission)
+
+reddit = reddit_object()
+df = scrape_submissions_1000(reddit)
+new_sub_list, new_submission, df_sql = new_submissions(df)
+print(new_submission.shape)
+sql_submit(new_submission)
 
 
-schedule.every().day.at("20:41").do(main)
-schedule.every().day.at("06:47").do(main)
-
-while True:
-    schedule.run_pending()
-    time.sleep(15)
 
