@@ -1,6 +1,7 @@
 import praw
 import pandas as pd
 import time
+import config
 
 #SQL
 import mysql.connector
