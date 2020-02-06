@@ -25,12 +25,12 @@ Reddit User Attributes
 
 ## Redditor Vs Scammer EDA 
 
-![https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/age.png]
-![https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/Karma.png]
-![https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/email.png]
-![https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/gold.png]
-![https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/mod.png]
-![https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/comments.png]
+!https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/age.png[]
+!https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/Karma.png[]
+!https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/email.png[]
+!https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/gold.png[]
+!https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/mod.png[]
+!https://github.com/Landstein/Reddit-Transaction-Analysis/blob/master/images/comments.png[]
 
 
 
