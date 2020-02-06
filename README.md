@@ -2,7 +2,7 @@
 
 Write up on project [Medium Article][1]
 
-[1]https://towardsdatascience.com/how-to-use-machine-learning-to-make-predictions-on-reddit-part-i-44cd210ec427
+[1]:https://towardsdatascience.com/how-to-use-machine-learning-to-make-predictions-on-reddit-part-i-44cd210ec427
 
 ## Project Goals 
 To deterimine if another redditor is risky to transact with 
